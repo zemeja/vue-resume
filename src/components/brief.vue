@@ -1,11 +1,11 @@
 <template>
     <div class="brief">
         <div class="avatar">
-            <EditImage :src="require('@/assets/logo_name.png')" width="212" height="212" :isCircle="true" class="img"/>
-            <div class="name" contenteditable="true">Jesse Luo</div>
-            <div class="job" contenteditable="true">Front-End</div>
+            <EditImage :src="require('@/assets/logo_name.jpg')" width="212" height="212" :isCircle="true" class="img"/>
+            <div class="name" contenteditable="true">Jakub Zemek</div>
+            <div class="job" contenteditable="true">Fullstack-developer</div>
             <div class="location">
-                <div class="location-name" contenteditable="true">Xiamen, China</div>
+                <div class="location-name" contenteditable="true">Brno, Czechia</div>
             </div>
         </div>
         <div class="info">
@@ -16,12 +16,12 @@
                     <span class="key" contenteditable="true">SEX</span>
                 </li>
                 <li>
-                    <span class="value" contenteditable="true">26</span>
+                    <span class="value" contenteditable="true">29</span>
                     <br>
                     <span class="key" contenteditable="true">AGE</span>
                 </li>
                 <li>
-                    <span class="value" contenteditable="true">B.A.</span>
+                    <span class="value" contenteditable="true">FE/Dis.</span>
                     <br>
                     <span class="key" contenteditable="true">DEGREE</span>
                 </li>

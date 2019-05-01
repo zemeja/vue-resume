@@ -5,45 +5,25 @@
                 <Brief/>
                 <ContextList title="CONTACT" :icon="require('@/assets/title-contact.png')">
                     <ListItemInfo
-                        title="1860***3412"
+                        title="+420 733 382 954"
                         :image="require('@/assets/contact-phone.png')"
                         slot="listItem"
                     />
                     <ListItemInfo
-                        title="luo_sj@163.com"
+                        title="jakub@zemek.info"
                         :image="require('@/assets/contact-mail.png')"
-                        slot="listItem"
-                    />
-                    <ListItemInfo
-                        title="lsj***inhao"
-                        :image="require('@/assets/social-wechat.png')"
-                        slot="listItem"
-                    />
-                    <ListItemInfo
-                        title="155***9564"
-                        :image="require('@/assets/social-qq.png')"
                         slot="listItem"
                     />
                 </ContextList>
                 <ContextList title="SOCIAL" :icon="require('@/assets/title-contact.png')">
                     <ListItemInfo
-                        title="github.com/luosijie"
+                        title="github.com/zemeja/"
                         :image="require('@/assets/social-github.png')"
                         slot="listItem"
                     />
                     <ListItemInfo
-                        title="dribbble.com/luosj"
+                        title="linkedin.com/in/jakubzemek/"
                         :image="require('@/assets/social-dribbble.png')"
-                        slot="listItem"
-                    />
-                    <ListItemInfo
-                        title="behance.net/jesseluo"
-                        :image="require('@/assets/social-behance.png')"
-                        slot="listItem"
-                    />
-                    <ListItemInfo
-                        title="i.ui.cn/ucenter/122744"
-                        :image="require('@/assets/social-uicn.png')"
                         slot="listItem"
                     />
                 </ContextList>
@@ -59,10 +39,28 @@
                 </ContextList>
                 <ContextList title="Education">
                     <ListItemEducation
+                            slot="listItem"
+                            school="Vysoká škola Karla Engliše Brno"
+                            major="Business Management"
+                            date="2013 — 2013"
+                    />
+                    <ListItemEducation
                         slot="listItem"
-                        school="Minjiang University"
-                        major="History"
-                        date="2011.9 — 2015.6"
+                        school="Střední průmyslová škola a Vyšší odborná škola Brno"
+                        major="Computer Support in Business Management"
+                        date="2010 — 2013"
+                    />
+                    <ListItemEducation
+                            slot="listItem"
+                            school="Language school SLI international, Brno"
+                            major="English"
+                            date="2009 — 2010"
+                    />
+                    <ListItemEducation
+                            slot="listItem"
+                            school="Střední odborná škola a Střední odborné učiliště Kuřim, s.r.o."
+                            major="Information Technology"
+                            date="2005 — 2009"
                     />
                 </ContextList>
                 <ContextList title="Working Experience">
