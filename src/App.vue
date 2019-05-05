@@ -1,121 +1,123 @@
 <template>
     <div id="app">
-        <div class="resume">
-            <div class="left">
-                <Brief/>
-                <ContextList title="CONTACT" :icon="require('@/assets/title-contact.png')">
-                    <ListItemInfo
-                        title="+420 733 382 954"
-                        :image="require('@/assets/contact-phone.png')"
-                        slot="listItem"
-                    />
-                    <ListItemInfo
-                        title="jakub@zemek.info"
-                        :image="require('@/assets/contact-mail.png')"
-                        slot="listItem"
-                    />
-                </ContextList>
-                <ContextList title="SOCIAL" :icon="require('@/assets/title-contact.png')">
-                    <ListItemInfo
-                        title="github.com/zemeja/"
-                        :image="require('@/assets/social-github.png')"
-                        slot="listItem"
-                    />
-                    <ListItemInfo
-                        title="linkedin.com/in/jakubzemek/"
-                        :image="require('@/assets/social-linkedin.png')"
-                        slot="listItem"
-                    />
-                </ContextList>
+        <div class="container">
+            <div class="guide">
+                <ul>
+                    <li>
+                        <img src="./assets/guide_click_left.png" height="60" width="60" alt>
+                        <div class="desc">
+                            <h3>Click On Content</h3>
+                            <p>To edit text or image</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/guide_click_right.png" height="60" width="60" alt>
+                        <div class="desc">
+                            <h3>Right Click On Item</h3>
+                            <p>To delete item</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/guide_add.png" height="60" width="60" alt>
+                        <div class="desc">
+                            <h3>Click Add Button</h3>
+                            <p>To add item</p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./assets/guide_sai.png" alt>
+                        <div class="desc">
+                            <h3>Click Save Button</h3>
+                            <p>To download resume as image</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="right">
-                <ContextList title="About me">
-                    <ListItemAbout slot="listItem"/>
-                </ContextList>
-                <ContextList title="Skill">
-                    <ListItemSkill slot="listItem" title="JavaScript" :percent="80"/>
-                    <ListItemSkill slot="listItem" title="Html5 + css3" :percent="90"/>
-                    <ListItemSkill slot="listItem" title="PHP" :percent="80"/>
-                    <ListItemSkill slot="listItem" title="SQL" :percent="60"/>
-                    <ListItemSkill slot="listItem" title="Docker" :percent="50"/>
-                </ContextList>
-                <ContextList title="Additional skills">
-                    <ListItemAdditionalSkills slot="listItem"/>
-                </ContextList>
-                <ContextList title="Education">
-                    <ListItemEducation
+            <div class="resume">
+                <div class="left">
+                    <Brief/>
+                    <ContextList title="CONTACT" :icon="require('@/assets/title-contact.png')">
+                        <ListItemInfo
+                            title="+420 733 382 954"
+                            :image="require('@/assets/contact-phone.png')"
                             slot="listItem"
-                            school="Vysoká škola Karla Engliše Brno"
-                            major="Business Management"
-                            date="2013 — 2013"
-                    />
-                    <ListItemEducation
-                        slot="listItem"
-                        school="Střední průmyslová škola a Vyšší odborná škola Brno"
-                        major="Computer Support in Business Management"
-                        date="2010 — 2013"
-                    />
-                    <ListItemEducation
+                        />
+                        <ListItemInfo
+                            title="jakub@zemek.info"
+                            :image="require('@/assets/contact-mail.png')"
                             slot="listItem"
-                            school="Language school SLI international, Brno"
-                            major="English"
-                            date="2009 — 2010"
-                    />
-                    <ListItemEducation
+                        />
+                    </ContextList>
+                    <ContextList title="SOCIAL" :icon="require('@/assets/title-contact.png')">
+                        <ListItemInfo
+                            title="github.com/zemeja/"
+                            :image="require('@/assets/social-github.png')"
                             slot="listItem"
-                            school="Střední odborná škola a Střední odborné učiliště Kuřim, s.r.o."
-                            major="Information Technology"
-                            date="2005 — 2009"
-                    />
-                </ContextList>
-                <ContextList title="Working Experience">
-                    <ListItemExperience slot="listItem" description="Frontend team leader in tailor-made e-commerce solutions department."/>
-                    <ListItemExperience slot="listItem" company="Freelance" job="Freelance developer" date="2009 — 2013" description="Creating and maintaing various website projects, usually built on top of open-source software f.e. Opencart, Prestashop, Wordpress."/>
-                </ContextList>
+                        />
+                        <ListItemInfo
+                            title="linkedin.com/in/jakubzemek/"
+                            :image="require('@/assets/social-linkedin.png')"
+                            slot="listItem"
+                        />
+                    </ContextList>
+                </div>
+                <div class="right">
+                    <ContextList title="About me">
+                        <ListItemAbout slot="listItem"/>
+                    </ContextList>
+                    <ContextList title="Skill">
+                        <ListItemSkill slot="listItem" title="JavaScript" :percent="80"/>
+                        <ListItemSkill slot="listItem" title="Html5 + css3" :percent="90"/>
+                        <ListItemSkill slot="listItem" title="PHP" :percent="80"/>
+                        <ListItemSkill slot="listItem" title="SQL" :percent="60"/>
+                        <ListItemSkill slot="listItem" title="Docker" :percent="50"/>
+                    </ContextList>
+                    <ContextList title="Additional skills">
+                        <ListItemAdditionalSkills slot="listItem"/>
+                    </ContextList>
+                    <ContextList title="Education">
+                        <ListItemEducation
+                                slot="listItem"
+                                school="Vysoká škola Karla Engliše Brno"
+                                major="Business Management"
+                                date="2013 — 2013"
+                        />
+                        <ListItemEducation
+                            slot="listItem"
+                            school="SPŠ a VOŠ Brno, Sokolská"
+                            major="Computer Support in BM"
+                            date="2010 — 2013"
+                        />
+                        <ListItemEducation
+                                slot="listItem"
+                                school="Lang. school SLI international"
+                                major="English"
+                                date="2009 — 2010"
+                        />
+                        <ListItemEducation
+                                slot="listItem"
+                                school="SOŠ a SOU Kuřim, s.r.o."
+                                major="Information Technology"
+                                date="2005 — 2009"
+                        />
+                    </ContextList>
+                    <ContextList title="Working Experience">
+                        <ListItemExperience slot="listItem" description="Frontend team leader in tailor-made e-commerce solutions department."/>
+                        <ListItemExperience slot="listItem" company="Freelance" job="Freelance developer" date="2009 — 2013" description="Creating and maintaing various website projects, usually built on top of open-source software f.e. Opencart, Prestashop, Wordpress."/>
+                    </ContextList>
+                </div>
             </div>
-        </div>
-        <div class="guide">
-            <ul>
-                <li>
-                    <img src="./assets/guide_click_left.png" height="60" width="60" alt>
-                    <div class="desc">
-                        <h3>Click On Content</h3>
-                        <p>To edit text or image</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/guide_click_right.png" height="60" width="60" alt>
-                    <div class="desc">
-                        <h3>Right Click On Item</h3>
-                        <p>To delete item</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/guide_add.png" height="60" width="60" alt>
-                    <div class="desc">
-                        <h3>Click Add Button</h3>
-                        <p>To add item</p>
-                    </div>
-                </li>
-                <li>
-                    <img src="./assets/guide_sai.png" alt>
-                    <div class="desc">
-                        <h3>Click Save Button</h3>
-                        <p>To download resume as image</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="action-save">
-            <button @click="saveAsImage">Save as PNG</button>
-            <button @click="saveAsPdf">Save as PDF</button>
-        </div>
-        <div class="footer">
-            <a href="https://github.com/luosijie/vue-resume" target="_blank">
-                <img src="./assets/social-github.png" height="36" width="36" alt>
-            </a>
-            vue-resume designed by
-            <a href="https://github.com/luosijie">Jesse Luo</a>
+            <div class="action-save">
+                <button @click="saveAsImage">Save as PNG</button>
+                <button @click="saveAsPdf">Save as PDF</button>
+            </div>
+            <div class="footer">
+                <a href="https://github.com/zemeja/vue-resume" target="_blank">
+                    <img src="./assets/social-github.png" height="36" width="36" alt>
+                </a>
+                <a href="https://github.com/zemeja/">My</a> fork of vue-resume designed by
+                <a href="https://github.com/luosijie">Jesse Luo</a>
+            </div>
         </div>
     </div>
 </template>
@@ -191,12 +193,14 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 40px 0;
-
-    .resume {
+    padding: 15px 0;
+    .container {
         width: 1247px;
-        //height: 1754px;
-        border: 1px solid #dad8d7;
+        margin: 0 auto;
+        position: relative;
+    }
+    .resume {
+        box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
         background-color: white;
         overflow: hidden;
 
@@ -211,7 +215,7 @@ p {
 
         .right {
             box-sizing: border-box;
-            width: 867px;
+            width: 865px;
             float: left;
             padding: 50px 40px;
 
@@ -226,9 +230,8 @@ p {
 
     .action-save {
         position: absolute;
-        top: 65px;
-        left: 50%;
-        margin-left: 428px;
+        top: 150px;
+        right: 15px;
         button {
             padding: 5px 8px;
             border-radius: 4px;
@@ -242,11 +245,9 @@ p {
     }
 
     .guide {
-        border: 1px solid #dad8d7;
-        width: 1247px;
-        margin-top: 15px;
+        margin-bottom: 15px;
         height: 120px;
-
+        box-shadow: 0 1px 1px 0 rgba(60,64,67,.08), 0 1px 3px 1px rgba(60,64,67,.16);
         ul {
             width: 100%;
             height: 100%;
@@ -275,6 +276,7 @@ p {
     }
 
     .footer {
+        text-align: center;
         line-height: 50px;
 
         a {

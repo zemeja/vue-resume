@@ -9,8 +9,8 @@ class GeneratePDF {
         this.ratio = 2.1
         this.definition = {
             info: {
-                title: 'Vue Resume',
-                author: 'Jesse Luo'
+                title: 'Jakub Zemek resume',
+                author: 'Jakub Zemek'
             },
             pageSize: 'A4',
             pages: 1,
@@ -139,7 +139,7 @@ class GeneratePDF {
         this._traverseContainer(this.container)
         this._addBackground()
         setTimeout(() => {
-            this.pdfmake.createPdf(this.definition).open()
+            this.pdfmake.createPdf(this.definition).download('Jakub Zemek CV resume')
         }, 1000)
     }
 }

@@ -21,7 +21,7 @@
                     <span class="key" contenteditable="true" spellcheck="false">AGE</span>
                 </li>
                 <li>
-                    <span class="value" contenteditable="true" spellcheck="false">FE/Dis.</span>
+                    <span class="value" contenteditable="true" spellcheck="false">FE/DiS.</span>
                     <br>
                     <span class="key" contenteditable="true" spellcheck="false">DEGREE</span>
                 </li>
