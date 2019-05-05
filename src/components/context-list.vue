@@ -3,7 +3,7 @@
         <div class="list-heading" :class="{ 'icon-class': icon }">
             <div class="title">
                 <EditImage v-if="icon" :src="icon" height="36" width="36" class="img"/>
-                <h2 class="title" contenteditable="true">{{title}}</h2>
+                <h2 class="title" contenteditable="true" spellcheck="false">{{title}}</h2>
             </div>
             <div class="button add" @click="add" :class="{ 'icon-margin-right': icon }">+</div>
         </div>

@@ -2,17 +2,17 @@
     <ListItem class="list-item-experience">
         <div class="heading">
             <div class="company">
-                <span contenteditable="true">{{ company }}</span>
+                <span contenteditable="true" spellcheck="false">{{ company }}</span>
             </div>
             <div class="job">
-                <span contenteditable="true">{{ job }}</span>
+                <span contenteditable="true" spellcheck="false">{{ job }}</span>
             </div>
             <div class="date">
-                <span contenteditable="true">{{ date }}</span>
+                <span contenteditable="true" spellcheck="false">{{ date }}</span>
             </div>
         </div>
-        <p contenteditable="true">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris blandit metus in libero rutrum congue aliquam eu libero. Donec tristique est pharetra fringilla sollicitudin. Etiam eu ipsum vitae nulla tincidunt scelerisque semper id arcu. Phasellus quam tellus, laoreet id felis a, dignissim facilisis orci. Mauris feugiat vulputate quam quis tincidunt. In eleifend augue eu tristique bibendum. Donec gravida, eros sed iaculis iaculis, magna est finibus tortor, ultricies accumsan diam lorem non neque.
+        <p contenteditable="true" spellcheck="false">
+            {{ description }}
         </p>
     </ListItem>
 </template>
@@ -26,15 +26,19 @@ export default {
     props: {
         company: {
             type: String,
-            default: 'Google'
+            default: 'oXy Online s.r.o.'
         },
         job: {
             type: String,
-            default: 'UI Desgner'
+            default: 'Lead frontend developer'
         },
         date: {
             type: String,
-            default: '2011.9 - 2015.6'
+            default: '2013.8 — now'
+        },
+        description: {
+            type: String,
+            default: 'Job description'
         }
     }
 }

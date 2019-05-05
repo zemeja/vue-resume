@@ -23,7 +23,7 @@
                     />
                     <ListItemInfo
                         title="linkedin.com/in/jakubzemek/"
-                        :image="require('@/assets/social-dribbble.png')"
+                        :image="require('@/assets/social-linkedin.png')"
                         slot="listItem"
                     />
                 </ContextList>
@@ -34,8 +34,13 @@
                 </ContextList>
                 <ContextList title="Skill">
                     <ListItemSkill slot="listItem" title="JavaScript" :percent="80"/>
-                    <ListItemSkill slot="listItem" title="Html5 + css3" :percent="60"/>
-                    <ListItemSkill slot="listItem" title="Vue" :percent="30"/>
+                    <ListItemSkill slot="listItem" title="Html5 + css3" :percent="90"/>
+                    <ListItemSkill slot="listItem" title="PHP" :percent="80"/>
+                    <ListItemSkill slot="listItem" title="SQL" :percent="60"/>
+                    <ListItemSkill slot="listItem" title="Docker" :percent="50"/>
+                </ContextList>
+                <ContextList title="Additional skills">
+                    <ListItemAdditionalSkills slot="listItem"/>
                 </ContextList>
                 <ContextList title="Education">
                     <ListItemEducation
@@ -64,10 +69,8 @@
                     />
                 </ContextList>
                 <ContextList title="Working Experience">
-                    <ListItemExperience slot="listItem"/>
-                    <ListItemExperience slot="listItem" company="Airbnb"/>
-                    <ListItemExperience slot="listItem" company="Apple"/>
-                    <ListItemExperience slot="listItem" company="facebook"/>
+                    <ListItemExperience slot="listItem" description="Frontend team leader in tailor-made e-commerce solutions department."/>
+                    <ListItemExperience slot="listItem" company="Freelance" job="Freelance developer" date="2009 — 2013" description="Creating and maintaing various website projects, usually built on top of open-source software f.e. Opencart, Prestashop, Wordpress."/>
                 </ContextList>
             </div>
         </div>
@@ -120,6 +123,7 @@
 import ContextList from '@/components/context-list'
 import ListItemAbout from '@/components/list-item-about'
 import ListItemSkill from '@/components/list-item-skill'
+import ListItemAdditionalSkills from '@/components/list-item-additional-skills'
 import ListItemEducation from '@/components/list-item-education'
 import ListItemExperience from '@/components/list-item-experience'
 import ListItemInfo from '@/components/list-item-info'
@@ -134,6 +138,7 @@ export default {
         ContextList,
         ListItemAbout,
         ListItemSkill,
+        ListItemAdditionalSkills,
         ListItemEducation,
         ListItemExperience,
         ListItemInfo,
@@ -190,7 +195,7 @@ p {
 
     .resume {
         width: 1247px;
-        height: 1754px;
+        //height: 1754px;
         border: 1px solid #dad8d7;
         background-color: white;
         overflow: hidden;

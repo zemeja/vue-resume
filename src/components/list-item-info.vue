@@ -1,7 +1,7 @@
 <template>
     <ListItem class="list-item-info">
         <EditImage :src="image" class="img"></EditImage>
-        <span contenteditable="true">{{ title }}</span>
+        <span contenteditable="true" spellcheck="false">{{ title }}</span>
     </ListItem>
 </template>
 <script>

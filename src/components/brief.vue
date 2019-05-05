@@ -2,28 +2,28 @@
     <div class="brief">
         <div class="avatar">
             <EditImage :src="require('@/assets/logo_name.jpg')" width="212" height="212" :isCircle="true" class="img"/>
-            <div class="name" contenteditable="true">Jakub Zemek</div>
-            <div class="job" contenteditable="true">Fullstack-developer</div>
+            <div class="name" contenteditable="true" spellcheck="false">Jakub Zemek</div>
+            <div class="job" contenteditable="true" spellcheck="false">Fullstack-developer</div>
             <div class="location">
-                <div class="location-name" contenteditable="true">Brno, Czechia</div>
+                <div class="location-name" contenteditable="true" spellcheck="false">Brno, Czechia</div>
             </div>
         </div>
         <div class="info">
             <ul>
                 <li>
-                    <span class="value" contenteditable="true">Male</span>
+                    <span class="value" contenteditable="true" spellcheck="false">Male</span>
                     <br>
-                    <span class="key" contenteditable="true">SEX</span>
+                    <span class="key" contenteditable="true" spellcheck="false">SEX</span>
                 </li>
                 <li>
-                    <span class="value" contenteditable="true">29</span>
+                    <span class="value" contenteditable="true" spellcheck="false">29</span>
                     <br>
-                    <span class="key" contenteditable="true">AGE</span>
+                    <span class="key" contenteditable="true" spellcheck="false">AGE</span>
                 </li>
                 <li>
-                    <span class="value" contenteditable="true">FE/Dis.</span>
+                    <span class="value" contenteditable="true" spellcheck="false">FE/Dis.</span>
                     <br>
-                    <span class="key" contenteditable="true">DEGREE</span>
+                    <span class="key" contenteditable="true" spellcheck="false">DEGREE</span>
                 </li>
             </ul>
         </div>
